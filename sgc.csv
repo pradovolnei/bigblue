@@ -1,0 +1,77 @@
+dbms;TABLE_SCHEMA;TABLE_NAME;COLUMN_NAME;ORDINAL_POSITION;DATA_TYPE;CHARACTER_MAXIMUM_LENGTH;CONSTRAINT_TYPE;REFERENCED_TABLE_SCHEMA;REFERENCED_TABLE_NAME;REFERENCED_COLUMN_NAME
+"mysql";"sgc";"atendimentos";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"atendimentos";"id_atendente";"6";"int";\N;"FOREIGN KEY";"sgc";"usuarios";"id"
+"mysql";"sgc";"atendimentos";"id_clinica";"7";"int";\N;"FOREIGN KEY";"sgc";"clinica";"id"
+"mysql";"sgc";"atendimentos";"id_paciente";"4";"int";\N;"FOREIGN KEY";"sgc";"usuarios";"id"
+"mysql";"sgc";"atendimentos";"id_plano";"3";"int";\N;"FOREIGN KEY";"sgc";"plano";"id"
+"mysql";"sgc";"atendimentos";"id_proc";"2";"int";\N;"FOREIGN KEY";"sgc";"procedimento";"id"
+"mysql";"sgc";"chamados";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"chat";"id_receptor";"2";"int";\N;"FOREIGN KEY";"sgc";"usuarios";"id"
+"mysql";"sgc";"chat";"id_remetente";"1";"int";\N;"FOREIGN KEY";"sgc";"usuarios";"id"
+"mysql";"sgc";"cidades";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"clinica";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"especialidades";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"notificacao";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"perfil";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"plano";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"plano_clinica";"id_clinica";"2";"int";\N;"FOREIGN KEY";"sgc";"clinica";"id"
+"mysql";"sgc";"plano_clinica";"id_plano";"1";"int";\N;"FOREIGN KEY";"sgc";"plano";"id"
+"mysql";"sgc";"proc_clinica";"id_clinica";"2";"int";\N;"FOREIGN KEY";"sgc";"clinica";"id"
+"mysql";"sgc";"proc_clinica";"id_proc";"1";"int";\N;"FOREIGN KEY";"sgc";"procedimento";"id"
+"mysql";"sgc";"procedimento";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"procedimento";"id_espec";"3";"int";\N;"FOREIGN KEY";"sgc";"especialidades";"id"
+"mysql";"sgc";"usuarios";"id";"1";"int";\N;"PRIMARY KEY";\N;\N;\N
+"mysql";"sgc";"usuarios";"id_clinica";"10";"int";\N;"FOREIGN KEY";"sgc";"clinica";"id"
+"mysql";"sgc";"usuarios";"perfil";"9";"int";\N;"FOREIGN KEY";"sgc";"perfil";"id"
+"mysql";"sgc";"atendimentos";"nome_paciente";"5";"varchar";"155";\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"data_abertura";"8";"datetime";\N;\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"data_agendada";"9";"datetime";\N;\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"data_encerramento";"10";"datetime";\N;\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"obs_paciente";"11";"text";"65535";\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"obs_clinica";"12";"text";"65535";\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"resultado";"13";"text";"65535";\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"laudo";"14";"varchar";"255";\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"avaliacao";"15";"float";\N;\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"status";"16";"varchar";"100";\N;\N;\N;\N
+"mysql";"sgc";"atendimentos";"nota";"17";"float";\N;\N;\N;\N;\N
+"mysql";"sgc";"chamados";"id_usuario";"2";"int";\N;\N;\N;\N;\N
+"mysql";"sgc";"chamados";"mensagem";"3";"text";"65535";\N;\N;\N;\N
+"mysql";"sgc";"chamados";"id_tratador";"4";"int";\N;\N;\N;\N;\N
+"mysql";"sgc";"chamados";"resposta";"5";"text";"65535";\N;\N;\N;\N
+"mysql";"sgc";"chamados";"data_envio";"6";"datetime";\N;\N;\N;\N;\N
+"mysql";"sgc";"chamados";"data_resposta";"7";"datetime";\N;\N;\N;\N;\N
+"mysql";"sgc";"chamados";"status";"8";"varchar";"30";\N;\N;\N;\N
+"mysql";"sgc";"chat";"mensagem";"3";"text";"65535";\N;\N;\N;\N
+"mysql";"sgc";"chat";"data";"4";"datetime";\N;\N;\N;\N;\N
+"mysql";"sgc";"chat";"status";"5";"int";\N;\N;\N;\N;\N
+"mysql";"sgc";"cidades";"nome";"2";"varchar";"100";\N;\N;\N;\N
+"mysql";"sgc";"cidades";"uf";"3";"varchar";"2";\N;\N;\N;\N
+"mysql";"sgc";"clinica";"nome";"2";"varchar";"155";\N;\N;\N;\N
+"mysql";"sgc";"clinica";"data_cadastro";"3";"date";\N;\N;\N;\N;\N
+"mysql";"sgc";"clinica";"uf";"4";"varchar";"5";\N;\N;\N;\N
+"mysql";"sgc";"clinica";"cidade";"5";"varchar";"50";\N;\N;\N;\N
+"mysql";"sgc";"clinica";"bairro";"6";"varchar";"50";\N;\N;\N;\N
+"mysql";"sgc";"clinica";"endereco";"7";"text";"65535";\N;\N;\N;\N
+"mysql";"sgc";"clinica";"email";"8";"varchar";"100";\N;\N;\N;\N
+"mysql";"sgc";"clinica";"telefone";"9";"varchar";"20";\N;\N;\N;\N
+"mysql";"sgc";"especialidades";"nome";"2";"varchar";"155";\N;\N;\N;\N
+"mysql";"sgc";"logins";"id_usuario";"1";"int";\N;\N;\N;\N;\N
+"mysql";"sgc";"logins";"data_execucao";"2";"datetime";\N;\N;\N;\N;\N
+"mysql";"sgc";"logins";"execucao";"3";"varchar";"20";\N;\N;\N;\N
+"mysql";"sgc";"logins";"ip";"4";"varchar";"20";\N;\N;\N;\N
+"mysql";"sgc";"notificacao";"notificacao";"2";"text";"65535";\N;\N;\N;\N
+"mysql";"sgc";"notificacao";"perfil";"3";"int";\N;\N;\N;\N;\N
+"mysql";"sgc";"notificacao";"data";"4";"datetime";\N;\N;\N;\N;\N
+"mysql";"sgc";"notificacao";"status";"5";"int";\N;\N;\N;\N;\N
+"mysql";"sgc";"perfil";"perfil";"2";"varchar";"50";\N;\N;\N;\N
+"mysql";"sgc";"plano";"nome";"2";"varchar";"50";\N;\N;\N;\N
+"mysql";"sgc";"plano_clinica";"produto";"3";"varchar";"25";\N;\N;\N;\N
+"mysql";"sgc";"proc_clinica";"preco";"3";"float";\N;\N;\N;\N;\N
+"mysql";"sgc";"procedimento";"nome";"2";"varchar";"155";\N;\N;\N;\N
+"mysql";"sgc";"usuarios";"nome";"2";"varchar";"255";\N;\N;\N;\N
+"mysql";"sgc";"usuarios";"genero";"3";"int";\N;\N;\N;\N;\N
+"mysql";"sgc";"usuarios";"data_nascimento";"4";"date";\N;\N;\N;\N;\N
+"mysql";"sgc";"usuarios";"cpf";"5";"int";\N;\N;\N;\N;\N
+"mysql";"sgc";"usuarios";"email";"6";"varchar";"50";\N;\N;\N;\N
+"mysql";"sgc";"usuarios";"senha";"7";"varchar";"255";\N;\N;\N;\N
+"mysql";"sgc";"usuarios";"status";"8";"int";\N;\N;\N;\N;\N

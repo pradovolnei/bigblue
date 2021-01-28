@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<exame>
+		<referencia> 1 </referencia>
+		<exameCodigo> GLI </exameCodigo>
+		<urgente> 1 </urgente>
+		<solicitadoEm> 2018-09-08T10:30:20 </solicitadoEm>
+		<conservante>
+			<id> 1</id>
+			<nome>Nenhum</nome>
+		</conservante>
+	</exame>
+	
+	
+</root>

@@ -1,0 +1,36 @@
+.aval-mobile{
+	width: 9%;
+}.plus-mobile {        width: 5%!important    }
+.pdf{        width: 5%!important    }
+
+.user{        width: 5%!important    }
+
+@media (min-width: 992px) {
+    .pushmobile {
+        display: none!important
+    }
+	.add-mobile {
+        width: 15%!important
+    }		.plus-mobile {        width: 1%!important    }
+	
+	.aval-mobile{
+		width: 2%!important
+	}
+	
+	.not-mobile{
+		width: 600px!important
+	}
+	
+	.plus-mobile{
+		width: 2%!important
+	}
+	
+	.pdf{
+		width: 4%!important
+	}
+	
+	.user{
+		width: 3%!important
+	}
+}
+
